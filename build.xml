@@ -1,0 +1,17 @@
+<project default="compile">
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+
+    <target name="distribute" depends="compile">
+        <jar destfile="tower-defense.jar" >
+            <fileset dir="bin"/>
+            <fileset dir="res"/>
+            <fileset dir="src"/>
+            <manifest>
+              <attribute name="Main-Class" value="ui.Application"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
