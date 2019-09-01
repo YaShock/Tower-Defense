@@ -12,5 +12,5 @@ To create a jar file run:
 
 ## Running
 
-Either build or download the jar file and put it in the root directory of repository. Then you can run it:
+Either build or download (from release) the jar file and put it in the root directory of repository. Then you can run it:
 `java -jar tower-defense.jar`
